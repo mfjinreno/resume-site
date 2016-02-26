@@ -1,3 +1,18 @@
+a{
+	text-decoration: none;
+	-webkit-transition: ls ease;
+	-moz-transition: ls ease;
+	-o-transition: ls ease;
+	transition: ls ease;
+	display:block;
+}
+
+a:hover{
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
 
 .image-wrapper {
 position: relative;
