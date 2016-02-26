@@ -1,0 +1,16 @@
+
+.image-wrapper {
+position: relative;
+}
+.scale-image{
+  display: block;
+  width: auto;
+  max-width: 100%;
+}
+.heading-top{
+  font-family: "Tahoma"
+  position: relative;
+  display: block;
+  width: auto;
+  max-width: 75%;
+}
