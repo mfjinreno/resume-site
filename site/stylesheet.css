@@ -5,12 +5,28 @@ position: relative;
 .scale-image{
   display: block;
   width: auto;
-  max-width: 100%;
+  max-width: 75%;
 }
+
+.header-wrapper{
+	position:relative;
+}
+
+table {
+	position: relative;
+	width: auto;
+	display:block;
+	max-width:30%;
+}
+
 .heading-top{
-  font-family: "Tahoma"
+  font-family: Tahoma, Verdana, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
   position: relative;
   display: block;
   width: auto;
   max-width: 75%;
+  text-align: center;
 }
