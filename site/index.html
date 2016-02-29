@@ -1,36 +1,67 @@
 <!DOCTYPE html>
 <html lang = "en">
+
   <head>
     <title>Michael Johnston</title>
     <link type = "text/css" rel ="stylesheet" href="stylesheet.css" media = "screen"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
   	<div class = "header-wrapper">
     	<h1 class = "heading-top">Hi there.</h1>
     </div>
+    <!--
+    Show if screen size bigger than mobile
+  -->
+    <div class = "hide-mobile">
+      <table class = "hide-mobile">
+        <th>
+          <div class="image-wrapper">
+              <a href = "#"><img class = "scale-image" src = "./images/design.png"/></a>
+          </div>
+          <p class = "header">Design</p>
+        </th>
+        <th>
+          <div class="image-wrapper">
+              <a href = "#"><img class = "scale-image" src = "./images/prof.png"/></a>
+          </div>
+          <p class = "header">Experience</p>
+        </th>
+        <th>
+          <div class="image-wrapper">
+              <a href = "#"><img class = "scale-image" src = "./images/engin.png"/></a>
+          </div>
+          <p class = "header">Engineering</p>
+        </th>
+        <th><hr/></th>
+      </table>
+    </div>
 
-    <table >
-      <th>
+    <div class = "show-mobile">
+     <table>
+      <tr>
         <div class="image-wrapper">
             <a href = "#"><img class = "scale-image" src = "./images/design.png"/></a>
         </div>
-        <p>Design</p>
-      </th>
-      <th>
+        <p class = "header">Design</p>
+      </tr>
+      <tr>
         <div class="image-wrapper">
             <a href = "#"><img class = "scale-image" src = "./images/prof.png"/></a>
         </div>
-        <p>Experience</p>
-      </th>
-      <th>
+        <p class = "header">Experience</p>
+      </tr>
+      <tr>
         <div class="image-wrapper">
             <a href = "#"><img class = "scale-image" src = "./images/engin.png"/></a>
         </div>
-        <p>Engineering</p>
-      </th>
-      <th><hr/></th>
+        <p class = "header">Engineering</p>
+      </tr>
+      <tr><hr/></tr>
     </table>
+  </div>
+
 
   </body>
 

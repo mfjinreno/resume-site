@@ -1,3 +1,21 @@
+@media (min-width: 0px) and (max-width:999px){
+	.show-mobile {
+        display: block;
+     }
+      .hide-mobile {
+        display: none;
+     }
+
+     .scale-image{
+     	max-width: 60%;
+     }
+}
+
+
+
+/* BEGIN NORMAL BROWSER STYLINGS */
+
+
 a{
 	text-decoration: none;
 	-webkit-transition: ls ease;
@@ -14,12 +32,21 @@ a:hover{
 	transform: scale(1.1);
 }
 
+.header{
+	position: relative;
+	font-family: Tahoma, Verdana, sans-serif;
+	color:#333333;
+	margin:auto;
+	text-align: center;
+}
+
 .image-wrapper {
 position: relative;
 }
+
 .scale-image{
-  display: block;
-	margin: auto;
+  display:block;
+  margin: auto;
   width: auto;
   max-width: 75%;
 }
@@ -31,9 +58,7 @@ position: relative;
 table {
 	position: relative;
 	width: auto;
-	display:block;
-	max-width:30%;
-	align-items: center;
+	max-width:50%;
 
 	/* centered */
 	margin: auto;
@@ -45,7 +70,7 @@ table {
   font-variant: normal;
   font-weight: normal;
   position: relative;
-  display: block;
+  display:block;
   width: auto;
   max-width: 75%;
 	/*center within div*/
@@ -53,4 +78,13 @@ table {
 	/* centered */
 	margin: auto;
 	color: #333333;
+}
+
+@media  (min-width:1000px){
+	.show-mobile {
+        display: none;
+     }
+      .hide-mobile {
+        display: block;
+     }
 }
