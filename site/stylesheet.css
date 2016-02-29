@@ -19,6 +19,7 @@ position: relative;
 }
 .scale-image{
   display: block;
+	margin: auto;
   width: auto;
   max-width: 75%;
 }
@@ -32,6 +33,10 @@ table {
 	width: auto;
 	display:block;
 	max-width:30%;
+	align-items: center;
+
+	/* centered */
+	margin: auto;
 }
 
 .heading-top{
@@ -43,5 +48,9 @@ table {
   display: block;
   width: auto;
   max-width: 75%;
+	/*center within div*/
   text-align: center;
+	/* centered */
+	margin: auto;
+	color: #333333;
 }
