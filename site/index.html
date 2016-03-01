@@ -4,6 +4,8 @@
   <head>
     <title>Michael Johnston</title>
     <link type = "text/css" rel ="stylesheet" href="stylesheet.css" media = "screen"/>
+    <link type = "text/css" rel="stylesheet" href="./script/unslider-master/dist/css/unslider.css">
+    <link type = "text/css" rel="stylesheet" href="./script/unslider-master/dist/css/unslider-dots.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
@@ -21,7 +23,7 @@
         <table >
           <th>
             <div class="image-wrapper">
-                <a class = "hide" href = "#">
+                <a class = "hide" href = "#exp" onclick="test('exp'); return false;">
                   <img class = "scale-image" class = "header-links" src = "./images/experience.png"/>
                   <img class = "scale-image" src = "./images/prof.png"/>
                 </a>
@@ -29,7 +31,7 @@
           </th>
           <th>
             <div class="image-wrapper">
-                <a class = "hide" href = "#">
+                <a class = "hide" href = "#des" onclick="test('des'); return false;">
 
                   <img class = "scale-image" class = "header-links" src = "./images/des_text.png"/>
                   <img class = "scale-image" src = "./images/design.png"/>
@@ -40,7 +42,7 @@
           </th>
           <th>
             <div class="image-wrapper">
-                <a class = "hide" href = "#">
+                <a class = "hide" href = "#eng" onclick="test('eng'); return false;">
                   
                   <img  class = "scale-image" class = "header-links" src = "./images/eng_text.png"/>
                   <img class = "scale-image" src = "./images/engin.png"/>
@@ -76,7 +78,6 @@
           <tr>
             <div class="image-wrapper">
                 <a class = "hide" href = "#">
-                  
                   <img  class = "scale-image" class = "header-links" src = "./images/eng_text.png"/>
                   <img class = "scale-image" src = "./images/engin.png"/>
                 </a>
@@ -93,15 +94,72 @@
   end of landing potion begin resume portion
 -->
 
-<div class= "about-me">
+<div class= "info-container">
   <h1 class = "section-header">About Me</h1>
   <p class = "about-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor elit vitae magna euismod, eget condimentum massa congue. Duis lobortis ante diam, sit amet fringilla turpis molestie luctus. Aliquam convallis lectus tortor, ut rhoncus neque congue at. Sed sollicitudin erat et semper tempus. Curabitur lacinia libero eget lectus consequat sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam tempor lacus vitae finibus iaculis. Donec enim sem, efficitur nec nunc nec, vestibulum commodo nisl. Vivamus condimentum ut sem at posuere. Cras neque nibh, pulvinar in lectus id, elementum dapibus lorem. In hac habitasse platea dictumst. Mauris rutrum, ante nec dapibus interdum, nulla orci eleifend justo, a hendrerit est diam suscipit tellus.</p>
 </div>
 
-<div class = "experience">
-  </div>
+<div id = "exp" class = "info-container">
+  <h1 class = "section-header">Experience</h1>
+    <table class = "item-section">
+      <tr>
+        <td>
+          <div class = "padded">
+            <h2>Experience 1</h2>
+            <p class = "item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor elit vitae magna euismod, eget condimentum massa congue. Duis lobortis ante diam, sit amet fringilla turpis molestie luctus. Aliquam convallis lectus tortor, ut rhoncus neque congue at. Sed sollicitudin erat et semper tempus. Curabitur lacinia libero eget lectus consequat sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam tempor lacus vitae finibus iaculis. Donec enim sem, efficitur nec nunc nec, vestibulum commodo nisl. Vivamus condimentum ut sem at posuere. Cras neque nibh, pulvinar in lectus id, elementum dapibus lorem. In hac habitasse platea dictumst. Mauris rutrum, ante nec dapibus interdum, nulla orci eleifend justo, a hendrerit est diam suscipit tellus.</p>
+          </div>
+        </td>
+
+        <td >
+          <div class = "padded">
+            <h2>Experience 2</h2>
+            <p class = "item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor elit vitae magna euismod, eget condimentum massa congue. Duis lobortis ante diam, sit amet fringilla turpis molestie luctus. Aliquam convallis lectus tortor, ut rhoncus neque congue at. Sed sollicitudin erat et semper tempus. Curabitur lacinia libero eget lectus consequat sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam tempor lacus vitae finibus iaculis. Donec enim sem, efficitur nec nunc nec, vestibulum commodo nisl. Vivamus condimentum ut sem at posuere. Cras neque nibh, pulvinar in lectus id, elementum dapibus lorem. In hac habitasse platea dictumst. Mauris rutrum, ante nec dapibus interdum, nulla orci eleifend justo, a hendrerit est diam suscipit tellus.</p>
+          </div>
+        </td>
+
+        <td>
+          <div class = "padded">
+            <h2>Experience 3</h2>
+            <p class = "item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor elit vitae magna euismod, eget condimentum massa congue. Duis lobortis ante diam, sit amet fringilla turpis molestie luctus. Aliquam convallis lectus tortor, ut rhoncus neque congue at. Sed sollicitudin erat et semper tempus. Curabitur lacinia libero eget lectus consequat sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam tempor lacus vitae finibus iaculis. Donec enim sem, efficitur nec nunc nec, vestibulum commodo nisl. Vivamus condimentum ut sem at posuere. Cras neque nibh, pulvinar in lectus id, elementum dapibus lorem. In hac habitasse platea dictumst. Mauris rutrum, ante nec dapibus interdum, nulla orci eleifend justo, a hendrerit est diam suscipit tellus.</p>
+          </div>
+        </td>
+    </tr>
+  </table>
+</div>
+
+<div id = "des" class = "info-container">
+  <h1 class = "section-header">Design</h1>
+   <p class = "about-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor elit vitae magna euismod, eget condimentum massa congue. Duis lobortis ante diam, sit amet fringilla turpis molestie luctus. Aliquam convallis lectus tortor, ut rhoncus neque congue at. Sed sollicitudin erat et semper tempus. Curabitur lacinia libero eget lectus consequat sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam tempor lacus vitae finibus iaculis. Donec enim sem, efficitur nec nunc nec, vestibulum commodo nisl. Vivamus condimentum ut sem at posuere. Cras neque nibh, pulvinar in lectus id, elementum dapibus lorem. In hac habitasse platea dictumst. Mauris rutrum, ante nec dapibus interdum, nulla orci eleifend justo, a hendrerit est diam suscipit tellus.</p>
+
+   <div class = "my-slider">
+    <ul>
+      <li style = "background-image: url('./images/fc.png'); "></li>
+      <li style = "background-image: url('./images/jd.png')"></li>
+      <li style = "background-image: url('./images/polo.png')"></li>
+      <li style = "background-image: url('./images/tank.png')"></li>
+      <li style = "background-image: url('./images/dp.png')"></li>
+      <li style = "background-image: url('./images/kick.png')"></li>
+    </ul>
+   </div>
+</div>
+
+<div id = "eng" class = "info-container">
+  <h1 class = "section-header">Engineering</h1>
+   <p class = "about-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor elit vitae magna euismod, eget condimentum massa congue. Duis lobortis ante diam, sit amet fringilla turpis molestie luctus. Aliquam convallis lectus tortor, ut rhoncus neque congue at. Sed sollicitudin erat et semper tempus. Curabitur lacinia libero eget lectus consequat sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam tempor lacus vitae finibus iaculis. Donec enim sem, efficitur nec nunc nec, vestibulum commodo nisl. Vivamus condimentum ut sem at posuere. Cras neque nibh, pulvinar in lectus id, elementum dapibus lorem. In hac habitasse platea dictumst. Mauris rutrum, ante nec dapibus interdum, nulla orci eleifend justo, a hendrerit est diam suscipit tellus.</p>
+</div>
 
 
-  </body>
+
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="./script/unslider-master/src/js/unslider.js"></script> 
+  <script>
+    jQuery(document).ready(function($) {
+      $('.my-slider').unslider({
+        dots: true,
+      });
+    });
+  </script>
+  <script type = "text/javascript" src = "myscript.js"></script>
+</body>
 
 </html>

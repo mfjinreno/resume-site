@@ -60,6 +60,9 @@ a:hover{
 	transform: scale(1.1);
 }
 */
+a{
+	
+}
 
 a:hover img{
 	display:none;
@@ -68,6 +71,12 @@ a:hover img{
 body{
 	margin:0px;
 	padding:0px;
+}
+
+h2 {
+	font-family:Gafata;
+	font-size: 275%;
+	color:#1d1d1d;
 }
 
 table {
@@ -85,12 +94,6 @@ table {
 	color:#666666;
 }
 
-.about-me{
-	margin:auto;
-	width:auto;
-	max-width:90%;
-}
-
 .arrow-down {
         position:relative;
         top:0px;
@@ -103,6 +106,39 @@ table {
         border-right:20px solid transparent;
         border-top:20px solid #EB6F65;
 }
+.my-slider{
+	position:relative;
+	width:100% !important;
+	overflow:auto;
+	padding:0px;
+	margin:0px;
+
+}
+
+.my-slider ul{
+	margin:0px;
+	padding:0px;
+}
+
+.my-slider li{
+	list-style: none;
+	margin:0px;
+	padding:0px;
+}
+
+.my-slider ul li{
+	float:left;
+	padding:0px;
+	margin:0px;
+	min-height: 450px;
+	-webkit-background-size:100% auto;
+	-moz-background-size: 100% auto;
+	-ms-background-size:100% auto;
+	background-size:100% auto;
+	background-position-y:-75px;
+	box-shadow:inset 0 -3px 6px rgba(0,0,0,.1);
+
+}
 
 .break-image{
 	margin:auto;
@@ -112,7 +148,9 @@ table {
 }
 
 .experience{
-	
+	margin:auto;
+	width:auto;
+	max-width:90%;
 }
 
 
@@ -165,9 +203,29 @@ a:hover .header-links{
 .hide:hover img:first-child{display:none}
 .hide:hover img:last-child{display:block}
 
+.item{
+	font-family:Gafata;
+	font-size: 175%;
+	color:#666666;
+}
+
+.item-section{
+	position:relative;
+	width:auto;
+	max-width:98%;
+
+}
 .image-wrapper {
 position: relative;
 }
+
+.info-container{
+	margin:auto;
+	width:auto;
+	max-width:90%;
+	position:relative;
+}
+
 
 .landing{
 	background-color: #eb6f65;
@@ -180,6 +238,11 @@ position: relative;
 
 .min {
 	max-width:50%;
+}
+
+td .padded {
+	padding:5%;
+
 }
 
 .scale-image{
@@ -195,6 +258,10 @@ position: relative;
 	font-size: 500%;
 	color: #1d1d1d;
 	text-align:left;
+
+}
+
+.slider-photo{
 
 }
 
