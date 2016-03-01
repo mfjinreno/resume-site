@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'bebasNueBold'; /*a name to be used later*/
+    src: url('./fonts/BebasNeueBold.otf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'bebasNueRegular'; /*a name to be used later*/
+    src: url('./fonts/BebasNeue Regular.otf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Gafata'; /*a name to be used later*/
+    src: url('./fonts/gafata.otf'); /*URL to font*/
+}
+
 @media (min-width: 0px) and (max-width:999px){
 	 table {
      	max-width: 60%;
@@ -30,6 +43,7 @@
      }
 }
 
+/*
 a{
 	text-decoration: none;
 	-webkit-transition: ls ease;
@@ -44,6 +58,11 @@ a:hover{
 	-moz-transform: scale(1.1);
 	-o-transform: scale(1.1);
 	transform: scale(1.1);
+}
+*/
+
+a:hover img{
+	display:none;
 }
 
 body{
@@ -60,6 +79,42 @@ table {
 	margin: auto;
 }
 
+.about-body{
+	font-family:Gafata;
+	font-size: 175%;
+	color:#666666;
+}
+
+.about-me{
+	margin:auto;
+	width:auto;
+	max-width:90%;
+}
+
+.arrow-down {
+        position:relative;
+        top:0px;
+        margin-left:auto;
+        margin-right:auto;
+        padding-top:0px;
+        width:0;
+        height:0;
+        border-left:20px solid transparent;
+        border-right:20px solid transparent;
+        border-top:20px solid #EB6F65;
+}
+
+.break-image{
+	margin:auto;
+	position:relative;
+	max-width:25%;
+	display:block;
+}
+
+.experience{
+	
+}
+
 
 .header{
 	position: relative;
@@ -67,6 +122,20 @@ table {
 	color:#ecf0f1;
 	margin:auto;
 	text-align: center;
+}
+.header-image-wrapper{
+	display:block;
+	margin:auto;
+	width:auto;
+	max-width: 50%;
+}
+
+.header-links{
+	display: none;
+}
+
+a:hover .header-links{
+	display:block;
 }
 
 .header-wrapper{
@@ -90,6 +159,12 @@ table {
 	color: #ecf0f1;
 }
 
+.hide img:last-child{
+	display:none;
+}
+.hide:hover img:first-child{display:none}
+.hide:hover img:last-child{display:block}
+
 .image-wrapper {
 position: relative;
 }
@@ -102,6 +177,7 @@ position: relative;
 	padding: 0; 
 	margin: 0;
 }
+
 .min {
 	max-width:50%;
 }
@@ -111,5 +187,14 @@ position: relative;
   margin: auto;
   width: auto;
   max-width: 75%;
+  position:relative;
+}
+
+.section-header{
+	font-family: bebasNueBold;
+	font-size: 500%;
+	color: #1d1d1d;
+	text-align:left;
+
 }
 
