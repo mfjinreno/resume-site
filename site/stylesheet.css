@@ -1,18 +1,22 @@
 @media (min-width: 0px) and (max-width:999px){
+	 table {
+     	max-width: 60%;
+     }
+
+    .image-wrapper{
+    	padding:5%;
+     }
 	.show-mobile {
         display: block;
+        max-width:80%;
+        position:relative;
+        margin:auto;
      }
       .hide-mobile {
         display: none;
      }
-
-     .scale-image{
-     	max-width: 60%;
-     }
-
-     .p {
-
-     }
+    
+     
 }
 
 
