@@ -61,7 +61,7 @@ a:hover{
 }
 */
 a{
-	
+
 }
 
 a:hover img{
@@ -71,6 +71,7 @@ a:hover img{
 body{
 	margin:0px;
 	padding:0px;
+	background-color:#ecf0f1;
 }
 
 h2 {
@@ -94,7 +95,21 @@ table {
 	color:#666666;
 }
 
-.arrow-down {
+.arrow-down-blue {
+        position:relative;
+        top:0px;
+        margin-left:auto;
+        margin-right:auto;
+        padding-top:0px;
+        width:0;
+        height:0;
+        border-left:20px solid transparent;
+        border-right:20px solid transparent;
+        border-top:20px solid #3498db;
+}
+
+
+.arrow-down-orange {
         position:relative;
         top:0px;
         margin-left:auto;
@@ -106,38 +121,18 @@ table {
         border-right:20px solid transparent;
         border-top:20px solid #EB6F65;
 }
-.my-slider{
-	position:relative;
-	width:100% !important;
-	overflow:auto;
-	padding:0px;
-	margin:0px;
 
-}
-
-.my-slider ul{
-	margin:0px;
-	padding:0px;
-}
-
-.my-slider li{
-	list-style: none;
-	margin:0px;
-	padding:0px;
-}
-
-.my-slider ul li{
-	float:left;
-	padding:0px;
-	margin:0px;
-	min-height: 450px;
-	-webkit-background-size:100% auto;
-	-moz-background-size: 100% auto;
-	-ms-background-size:100% auto;
-	background-size:100% auto;
-	background-position-y:-75px;
-	box-shadow:inset 0 -3px 6px rgba(0,0,0,.1);
-
+.arrow-down-white {
+        position:relative;
+        top:0px;
+        margin-left:auto;
+        margin-right:auto;
+        padding-top:0px;
+        width:0;
+        height:0;
+        border-left:20px solid transparent;
+        border-right:20px solid transparent;
+        border-top:20px solid #ecf0f1;
 }
 
 .break-image{
@@ -145,6 +140,20 @@ table {
 	position:relative;
 	max-width:25%;
 	display:block;
+}
+
+.design {
+	background-color:#3498db;
+	padding-bottom:2%;
+	margin:0px;
+	color:#ecf0f1 !important;
+
+}
+
+.design-body {
+	color:#ecf0f1;
+	font-family:Gafata;
+	font-size: 175%;
 }
 
 .experience{
@@ -240,6 +249,41 @@ position: relative;
 	max-width:50%;
 }
 
+.my-slider{
+	position:relative;
+	width:100% !important;
+	overflow:auto;
+	padding:0px;
+	margin:0px;
+
+}
+
+.my-slider ul{
+	margin:0px;
+	padding:0px;
+}
+
+.my-slider li{
+	list-style: none;
+	margin:0px;
+	padding:0px;
+}
+
+.my-slider ul li{
+	float:left;
+	padding:0px;
+	margin:0px;
+	min-height: 450px;
+	-webkit-background-size:100% auto;
+	-moz-background-size: 100% auto;
+	-ms-background-size:100% auto;
+	background-size:100% auto;
+	background-position-y:-75px;
+	box-shadow:inset 0 -3px 6px rgba(0,0,0,.1);
+
+}
+
+
 td .padded {
 	padding:5%;
 
@@ -261,7 +305,4 @@ td .padded {
 
 }
 
-.slider-photo{
-
-}
 
