@@ -60,7 +60,7 @@
        <table >
           <tr>
             <div class="image-wrapper">
-                <a class = "hide" href = "#">
+                <a class = "hide" href = "#exp" onclick="test('exp'); return false;">
                   <img class = "scale-image" class = "header-links" src = "./images/experience.png"/>
                   <img class = "scale-image" src = "./images/prof.png"/>
                 </a>
@@ -68,7 +68,7 @@
           </tr>
            <tr>
             <div class="image-wrapper">
-                <a class = "hide" href = "#">
+                <a class = "hide" href = "#des" onclick="test('des'); return false;">
 
                   <img class = "scale-image" class = "header-links" src = "./images/des_text.png"/>
                   <img class = "scale-image" src = "./images/design.png"/>
@@ -77,7 +77,7 @@
           </tr>
           <tr>
             <div class="image-wrapper">
-                <a class = "hide" href = "#">
+                <a class = "hide" href = "#eng" onclick="test('eng'); return false;">
                   <img  class = "scale-image" class = "header-links" src = "./images/eng_text.png"/>
                   <img class = "scale-image" src = "./images/engin.png"/>
                 </a>
@@ -96,52 +96,94 @@
 
 <div class= "info-container">
   <h1 class = "section-header">About Me</h1>
-  <p class = "about-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor elit vitae magna euismod, eget condimentum massa congue. Duis lobortis ante diam, sit amet fringilla turpis molestie luctus. Aliquam convallis lectus tortor, ut rhoncus neque congue at. Sed sollicitudin erat et semper tempus. Curabitur lacinia libero eget lectus consequat sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam tempor lacus vitae finibus iaculis. Donec enim sem, efficitur nec nunc nec, vestibulum commodo nisl. Vivamus condimentum ut sem at posuere. Cras neque nibh, pulvinar in lectus id, elementum dapibus lorem. In hac habitasse platea dictumst. Mauris rutrum, ante nec dapibus interdum, nulla orci eleifend justo, a hendrerit est diam suscipit tellus.</p>
+  <p class = "about-body">Im a West Coast native, but Im back east to pursue my degree in Computer Science at Ohio State. I was raised in a family that was constantly challenging me, which taught me that dinners should never be boring, and losing is how you learn. I have a love for all things flat, as you can probably tell, which drives most of my designs. Im a socially motivated person, with interests outside of the classroom, ranging from ballroom dance to model-building. Ive always been a fan of UI/UX, but as Ive begun delving further into data-management, Ive found myself enjoying my work more and more.</p>
 </div>
 
 <div id = "exp" class = "info-container">
   <h1 class = "section-header">Experience</h1>
-    <table class = "item-section">
-      <tr>
-        <td>
-          <div class = "padded">
-            <h2>Experience 1</h2>
-            <p class = "item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor elit vitae magna euismod, eget condimentum massa congue. Duis lobortis ante diam, sit amet fringilla turpis molestie luctus. Aliquam convallis lectus tortor, ut rhoncus neque congue at. Sed sollicitudin erat et semper tempus. Curabitur lacinia libero eget lectus consequat sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam tempor lacus vitae finibus iaculis. Donec enim sem, efficitur nec nunc nec, vestibulum commodo nisl. Vivamus condimentum ut sem at posuere. Cras neque nibh, pulvinar in lectus id, elementum dapibus lorem. In hac habitasse platea dictumst. Mauris rutrum, ante nec dapibus interdum, nulla orci eleifend justo, a hendrerit est diam suscipit tellus.</p>
-          </div>
-        </td>
+    <div class = "hide-mobile">
+      <table class = "item-section">
+        <tr>
+          <td>
+            <div class = "padded">
+              <h2>AppHostNow</h2>
+              <p class = "item">AppHostNow was started by myself and two friends in May of 2014, during the summer between my Freshman and Sophmore year of college. Focusing on iOS and Android development for small local businesses, AppHostNow was my first real taste at managing a team of developers, as well as crafting a business strategy beyond the odd website job.</p>
+              <p class = "skills">Skills</p>
+              <ul>
+                <li class = "ex">Led and trained a team of eight iOS developers on a range of topics</li>
+                <li class = "ex">Developed complete front end of host website</li>
+                <li class = "ex">Acted as intermediary between clients and design team</li>
+                <li class = "ex">Designed UI layout schemes for a range of application uses</li>
+              </ul>
+            </div>
+          </td>
 
-        <td >
-          <div class = "padded">
-            <h2>Experience 2</h2>
-            <p class = "item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor elit vitae magna euismod, eget condimentum massa congue. Duis lobortis ante diam, sit amet fringilla turpis molestie luctus. Aliquam convallis lectus tortor, ut rhoncus neque congue at. Sed sollicitudin erat et semper tempus. Curabitur lacinia libero eget lectus consequat sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam tempor lacus vitae finibus iaculis. Donec enim sem, efficitur nec nunc nec, vestibulum commodo nisl. Vivamus condimentum ut sem at posuere. Cras neque nibh, pulvinar in lectus id, elementum dapibus lorem. In hac habitasse platea dictumst. Mauris rutrum, ante nec dapibus interdum, nulla orci eleifend justo, a hendrerit est diam suscipit tellus.</p>
-          </div>
-        </td>
+          <td >
+            <div class = "padded">
+              <a class = "billion-link" href = "https://www.billioneffect.com"><h2>Billion</h2></a>
+              <p class = "item">The product of a successful Hackathon, and $4000 in seed capital, Billion was created in March 2015 by a team of young-adults (myself included) looking to change the world. Billion is a competitive, bracket-style crowdfunder aimed at ideas solving social issues. Our first round raised over $8000 for a cleaning service that wants to rescue, hire, and re-habilitate sex-trafficking victims.</p>
+              <p class = "skills">Skills</p>
+              <ul>
+                <li class = "ex">Pitched to large groups of potential investors and clients</li>
+                <li class = "ex">Identified marketing and development strategies for a team of 13</li>
+                <li class = "ex">Participated in team-based programming environments with SVN</li>
+                <li class = "ex">Collaborated with various institutions focusing on startup development</li>
+              </ul>
+            </div>
+          </td>
+      </tr>
+    </table>
+  </div>
+  <div class = "show-mobile">
+      <table class = "item-section">
+        
+          <tr>
+            <div class = "padded">
+              <h2>AppHostNow</h2>
+              <p class = "item">AppHostNow was started by myself and two friends in May of 2014, during the summer between my Freshman and Sophmore year of college. Focusing on iOS and Android development for small local businesses, AppHostNow was my first real taste at managing a team of developers, as well as crafting a business strategy beyond the odd website job.</p>
+              <p class = "skills">Skills</p>
+              
+                <ul>
+                <li class = "ex">Pitched to large groups of potential investors and clients</li>
+                <li class = "ex">Identified marketing and development strategies for a team of 13</li>
+                <li class = "ex">Participated in team-based programming environments with SVN</li>
+                <li class = "ex">Collaborated with various institutions focusing on startup development</li>
+                </ul>
+              
+            </div>
+          </tr>
 
-        <td>
-          <div class = "padded">
-            <h2>Experience 3</h2>
-            <p class = "item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor elit vitae magna euismod, eget condimentum massa congue. Duis lobortis ante diam, sit amet fringilla turpis molestie luctus. Aliquam convallis lectus tortor, ut rhoncus neque congue at. Sed sollicitudin erat et semper tempus. Curabitur lacinia libero eget lectus consequat sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam tempor lacus vitae finibus iaculis. Donec enim sem, efficitur nec nunc nec, vestibulum commodo nisl. Vivamus condimentum ut sem at posuere. Cras neque nibh, pulvinar in lectus id, elementum dapibus lorem. In hac habitasse platea dictumst. Mauris rutrum, ante nec dapibus interdum, nulla orci eleifend justo, a hendrerit est diam suscipit tellus.</p>
-          </div>
-        </td>
-    </tr>
-  </table>
+          <tr>
+            <div class = "padded">
+              <a class = "billion-link" href = "https://www.billioneffect.com"><h2>Billion</h2></a>
+              <p class = "item">The product of a successful Hackathon, and $4000 in seed capital, Billion was created in March 2015 by a team of young-adults (myself included) looking to change the world. Billion is a competitive, bracket-style crowdfunder aimed at ideas solving social issues. Our first round raised over $8000 for a cleaning service that wants to rescue, hire, and re-habilitate sex-trafficking victims.</p>
+              <p class = "skills">Skills</p>
+              <ul>
+                <li class = "ex">Pitched to large groups of potential investors and clients</li>
+                <li class = "ex">Identified marketing and development strategies for a team of 13</li>
+                <li class = "ex">Participated in team-based programming environments with SVN</li>
+                <li class = "ex">Collaborated with various institutions focusing on startup development</li>
+              </ul>
+            </div>
+          </tr>
+    </table>
+  </div>
 </div>
-
 <div class= "design">
   <div id = "des" class = "info-container">
     <div class = "arrow-down-white"></div>
-  
-    <h1 class = "section-header">Design</h1>
-     <p class = "design-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor elit vitae magna euismod, eget condimentum massa congue. Duis lobortis ante diam, sit amet fringilla turpis molestie luctus. Aliquam convallis lectus tortor, ut rhoncus neque congue at. Sed sollicitudin erat et semper tempus. Curabitur lacinia libero eget lectus consequat sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam tempor lacus vitae finibus iaculis. Donec enim sem, efficitur nec nunc nec, vestibulum commodo nisl. Vivamus condimentum ut sem at posuere. Cras neque nibh, pulvinar in lectus id, elementum dapibus lorem. In hac habitasse platea dictumst. Mauris rutrum, ante nec dapibus interdum, nulla orci eleifend justo, a hendrerit est diam suscipit tellus.</p>
-
      <div class = "my-slider">
       <ul>
-        <li style = "background-image: url('./images/fc.png'); "></li>
-        <li style = "background-image: url('./images/jd.png')"></li>
-        <li style = "background-image: url('./images/polo.png')"></li>
-        <li style = "background-image: url('./images/tank.png')"></li>
-        <li style = "background-image: url('./images/dp.png')"></li>
-        <li style = "background-image: url('./images/kick.png')"></li>
+        <li>
+          <h1 class = "section-header">Design</h1>
+          <p class = "design-body">All of my design work is self-taught. Im profficient in photoshop and illustrator, and mostly use my work to make apparell for my greek organization. My design work has spilled into other arenas, such as logos and branding, but any design I have created has been pro-bono, and a personal project. My design focuses around a flat and minimalist design, and I'm always eager to learn more. </br></br> Check out some of my work!</p>
+        </li>
+        <li><img align= "center" class = "center" src = "./images/polo-f.png"/></li>
+        <li><img align = "center" class = "center" src = "./images/polo-b.png"/></li>
+        <li><img align = "center" class = "center" src = "./images/tank-f.png"/></li>
+        <li><img align = "center" class = "center" src = "./images/tank-b.png"/></li>
+        <li><img align = "center" class = "center" src = "./images/fc-f.png"/></li>
+        <li><img align = "center" class = "center" src = "./images/dp-b.png"/></li>
       </ul>
      </div>
    </div>
@@ -149,9 +191,94 @@
 <div class= "arrow-down-blue"></div>
 <div id = "eng" class = "info-container">
   <h1 class = "section-header">Engineering</h1>
-   <p class = "about-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor elit vitae magna euismod, eget condimentum massa congue. Duis lobortis ante diam, sit amet fringilla turpis molestie luctus. Aliquam convallis lectus tortor, ut rhoncus neque congue at. Sed sollicitudin erat et semper tempus. Curabitur lacinia libero eget lectus consequat sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam tempor lacus vitae finibus iaculis. Donec enim sem, efficitur nec nunc nec, vestibulum commodo nisl. Vivamus condimentum ut sem at posuere. Cras neque nibh, pulvinar in lectus id, elementum dapibus lorem. In hac habitasse platea dictumst. Mauris rutrum, ante nec dapibus interdum, nulla orci eleifend justo, a hendrerit est diam suscipit tellus.</p>
-</div>
+   <p class = "about-body">The majority of my engineering work has been academic, with focus areas in Java object oriented development, Web application Development, and Mobile Application development. My focus has been prioritized around User Interface design and User Experience, but recent ventures have led me into data management and aggregation systems. Im familiar with stardard SVN, and have a love for algorithms. My most recent fascination stems from the concept of procedural generation, sparked by the title <a class = "inline" href = "http://www.no-mans-sky.com/">No Mans Sky</a> and similar works. My strongest language skills are probably Java and Ruby, with significant personal and academic experience in both fields.</p> 
 
+
+<div class = "hide-mobile">
+      <table class = "item-section">
+        <tr>
+          <td>
+            <div class = "padded">
+              <h2>Skill Set 1</h2>
+              <p class = "item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor elit vitae magna euismod, eget condimentum massa congue. Duis lobortis ante diam, sit amet fringilla turpis molestie luctus. Aliquam convallis lectus tortor, ut rhoncus neque congue at. Sed sollicitudin erat et semper tempus. Curabitur lacinia libero eget lectus consequat sodales.</p>
+            </div>
+          </td>
+
+          <td >
+            <div class = "padded">
+              <h2>Skill Set 2</h2>
+              <p class = "item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor elit vitae magna euismod, eget condimentum massa congue. Duis lobortis ante diam, sit amet fringilla turpis molestie luctus. Aliquam convallis lectus tortor, ut rhoncus neque congue at. Sed sollicitudin erat et semper tempus. Curabitur lacinia libero eget lectus consequat sodales.</p>
+            </div>
+          </td>
+
+          <td>
+            <div class = "padded">
+              <h2>Skill Set 3</h2>
+              <p class = "item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor elit vitae magna euismod, eget condimentum massa congue. Duis lobortis ante diam, sit amet fringilla turpis molestie luctus. Aliquam convallis lectus tortor, ut rhoncus neque congue at. Sed sollicitudin erat et semper tempus. Curabitur lacinia libero eget lectus consequat sodales. </p>
+            </div>
+          </td>
+      </tr>
+    </table>
+  </div>
+  <div class = "show-mobile">
+      <table class = "item-section">
+        
+          <tr>
+            <div class = "padded">
+              <h2>Skill Set 1</h2>
+              <p class = "item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor elit vitae magna euismod, eget condimentum massa congue. Duis lobortis ante diam, sit amet fringilla turpis molestie luctus. Aliquam convallis lectus tortor, ut rhoncus neque congue at. Sed sollicitudin erat et semper tempus. Curabitur lacinia libero eget lectus consequat sodales. </p>
+          </tr>
+
+          <tr>
+            <div class = "padded">
+              <h2>Skill Set 2</h2>
+              <p class = "item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor elit vitae magna euismod, eget condimentum massa congue. Duis lobortis ante diam, sit amet fringilla turpis molestie luctus. Aliquam convallis lectus tortor, ut rhoncus neque congue at. Sed sollicitudin erat et semper tempus. Curabitur lacinia libero eget lectus consequat sodales. </p>
+          </tr>
+          <tr>
+            <div class = "padded">
+              <h2>Skill Set 3</h2>
+              <p class = "item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor elit vitae magna euismod, eget condimentum massa congue. Duis lobortis ante diam, sit amet fringilla turpis molestie luctus. Aliquam convallis lectus tortor, ut rhoncus neque congue at. Sed sollicitudin erat et semper tempus. Curabitur lacinia libero eget lectus consequat sodales. </p>
+          </tr>
+    </table>
+  </div>
+</div>
+</hr>
+
+<section>
+<div id="icon-wrapper">
+  <a target="_blank" href="mailto:johnston.697@osu.edu">
+    <div class="icons">
+      <div class="icon-slide-container">
+        <img class="slide-icon"  height="100" src="./images/view-map.png">
+        </div>
+      </div>
+    </a>
+    
+    <a href="#">
+      <div class="icons2">
+        <div class="icon-slide-container">
+          <img class="slide-icon"   height="100" src="./images/phone.png">
+          </div>
+        </div>
+      </a>
+      
+      <a target="_blank" href="https://www.linkedin.com/in/michael-johnston-78354395?trk=nav_responsive_tab_profile_pic">
+        <div class="icons3">
+          <div class="icon-slide-container">
+            <img class="slide-icon"  height="100" src="./images/in.png">
+            </div>
+          </div>
+        </a>
+        
+        <a target="_blank" href="https://github.com/mfjinreno">
+          <div class="icons4">
+            <div class="icon-slide-container">
+              <img class="slide-icon"  height="100" src="./images/github.png">
+              </div>
+            </div>
+          </a>
+  </div>
+</section>
 
 
   <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
