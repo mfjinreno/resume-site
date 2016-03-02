@@ -233,8 +233,18 @@ a:hover .header-links{
 .hide img:last-child{
 	display:none;
 }
-.hide:hover img:first-child{display:none}
-.hide:hover img:last-child{display:block}
+
+
+.hide:hover img:first-child{
+
+ 	opacity: .7;
+  	transition: opacity .2s linear;
+}
+.hide:hover img:last-child{
+  opacity: 1;
+  transition: opacity .2s linear;
+
+  }
 
 .item{
 	font-family:Gafata;

@@ -13,7 +13,9 @@
     <div class = "landing">
     	<div class = "header-wrapper">
         <div class = "header-image-wrapper">
-      	 <img class = "scale-image" src = "./images/michael.png"/>
+        <a href= "#contact" onclick = "test('contact'); return false;">
+      	   <img class = "scale-image" src = "./images/michael.png"/>
+        </a>
         </div>
       </div>
       <!--
@@ -22,7 +24,7 @@
       <div class = "hide-mobile">
         <table >
           <th>
-            <div class="image-wrapper">
+            <div class="image-wrapper" id = "image-swap">
                 <a class = "hide" href = "#exp" onclick="test('exp'); return false;">
                   <img class = "scale-image" class = "header-links" src = "./images/experience.png"/>
                   <img class = "scale-image" src = "./images/prof.png"/>
@@ -32,9 +34,8 @@
           <th>
             <div class="image-wrapper">
                 <a class = "hide" href = "#des" onclick="test('des'); return false;">
-
                   <img class = "scale-image" class = "header-links" src = "./images/des_text.png"/>
-                  <img class = "scale-image" src = "./images/design.png"/>
+                  <img class = "scale-image"  src = "./images/design.png"/>
                 </a>
 
             </div>
@@ -296,7 +297,7 @@
 </div>
 </hr>
 
-<section>
+<section id = "contact">
 <div id="icon-wrapper">
   <a target="_blank" href="mailto:johnston.697@osu.edu">
     <div class="icons">
