@@ -326,6 +326,15 @@ position: relative;
 	
 
 }
+a.navigate{
+	font-family: Gafata;
+}
+a.navigate:visited{
+	color:#ecf0f1;
+}
+a.navigate:hover{
+	color:#ecf0f1;
+}
 
 
 td .padded {
@@ -411,6 +420,7 @@ td .padded {
   margin: 6px 0 0;
   float: right;
   list-style: none;
+  z-index: 1;
 }
 
 .slidesjs-pagination li {
