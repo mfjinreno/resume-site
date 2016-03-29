@@ -6,6 +6,7 @@
     <link type = "text/css" rel ="stylesheet" href="stylesheet.css" media = "screen"/>
     <link type = "text/css" rel="stylesheet" href="./script/unslider-master/dist/css/unslider.css">
     <link type = "text/css" rel="stylesheet" href="./script/unslider-master/dist/css/unslider-dots.css">
+    <link type= "text/css" rel = "stylesheet" href = "font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
@@ -145,10 +146,10 @@
               <p class = "skills">Skills</p>
 
                 <ul>
-                <li class = "ex">Pitched to large groups of potential investors and clients</li>
-                <li class = "ex">Identified marketing and development strategies for a team of 13</li>
-                <li class = "ex">Participated in team-based programming environments with SVN</li>
-                <li class = "ex">Collaborated with various institutions focusing on startup development</li>
+                <li class = "ex">Led and trained a team of eight iOS developers on a range of topics</li>
+                <li class = "ex">Developed complete front end of host website</li>
+                <li class = "ex">Acted as intermediary between clients and design team</li>
+                <li class = "ex">Designed UI layout schemes for a range of application uses</li>
                 </ul>
 
             </div>
@@ -170,9 +171,10 @@
     </table>
   </div>
 </div>
-<div class= "design">
-  <div id = "des" class = "info-container">
-    <div class = "arrow-down-white"></div>
+<div class = "hide-mobile">
+  <div class= "design">
+    <div id = "des" class = "info-container">
+     <div class = "arrow-down-white"></div>
      <div class = "my-slider">
       <ul>
         <li>
@@ -187,9 +189,34 @@
         <li><img align = "center" class = "center" src = "./images/dp-b.png"/></li>
       </ul>
      </div>
-   </div>
+    </div>
+  </div>
+  <div class= "arrow-down-blue"></div>
 </div>
-<div class= "arrow-down-blue"></div>
+<div class = "show-mobile">
+  <div class = "design">
+    <div id = "des" class = "info-container">
+        <ul id = "mobile-list">
+          <li>
+            <h1 class = "section-header">Design</h1>
+            <p class = "design-body">All of my design work is self-taught. Im profficient in photoshop and illustrator, and mostly use my work to make apparell for my greek organization. My design work has spilled into other arenas, such as logos and branding, but any design I have created has been pro-bono, and a personal project. My design focuses around a flat and minimalist design, and Im always eager to learn more. </br></br> Check out some of my work!</p>
+          </li>
+        </ul>
+        <div class="container">
+          <div id="slides">
+            <img src="./images/polo-f.png">
+            <img src="./images/polo-b.png" >
+            <img src="./images/tank-f.png" >
+            <img src="./images/tank-b.png">
+            <img src = "./images/fc-f.png">
+            <img src = "./images/dp-b.png">
+            <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left"></i></a>
+            <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
 <div id = "eng" class = "info-container">
   <h1 class = "section-header">Engineering</h1>
    <p class = "about-body">The majority of my engineering work has been academic, with focus areas in Java object oriented development, Web application Development, and Mobile Application development. My focus has been prioritized around User Interface design and User Experience, but recent ventures have led me into data management and aggregation systems. Im familiar with stardard SVN, and have a love for algorithms. My most recent fascination stems from the concept of procedural generation, sparked by the title <a class = "inline" href = "http://www.no-mans-sky.com/">No Mans Sky</a> and similar works. My strongest language skills are  Java and Ruby, with significant personal and academic experience in both fields.</p>
@@ -336,6 +363,45 @@
 
   <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="./script/unslider-master/src/js/unslider.js"></script>
+
+  <!-- SlidesJS Required: Link to jQuery 
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  < End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Link to jquery.slides.js -->
+  <script src="jquery.slides.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        navigation: false
+      });
+
+      /*
+        To have multiple slideshows on the same page
+        they just need to have separate IDs
+      */
+      $('#slides2').slidesjs({
+        width: 940,
+        height: 528,
+        navigation: false,
+        start: 3,
+        play: {
+          auto: true
+        }
+      });
+
+      $('#slides3').slidesjs({
+        width: 940,
+        height: 528,
+        navigation: false
+      });
+    });
+  </script>
   <script>
     jQuery(document).ready(function($) {
       $('.my-slider').unslider({

@@ -12,6 +12,10 @@
 }
 
 @media (min-width: 0px) and (max-width:999px){
+	body{
+		margin: 0;
+		padding:0;
+	}
 	 table {
      	max-width: 60%;
      }
@@ -21,9 +25,10 @@
      }
 	.show-mobile {
         display: block;
-        max-width:80%;
+        max-width:100%;
         position:relative;
-        margin:auto;
+        margin: auto;
+        padding:0;
      }
       .hide-mobile {
         display: none;
@@ -37,6 +42,7 @@
 @media  (min-width:1000px){
 	.show-mobile {
         display: none;
+        padding:0;
      }
       .hide-mobile {
         display: block;
@@ -283,6 +289,10 @@ position: relative;
 	max-width:50%;
 }
 
+#mobile-list{
+	list-style: none;
+}
+
 .my-slider{
 	position:relative;
 	width:100% !important;
@@ -333,6 +343,103 @@ td .padded {
 .scale-image-slider{
 	width:100%;
 	height:auto;
+}
+
+#slides{
+	display:none;
+}
+
+
+.container {
+  margin: 0 auto
+}
+
+/* For tablets & smart phones */
+@media (max-width: 767px) {
+  body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .container {
+    width: auto
+  }
+}
+
+/* For smartphones */
+@media (max-width: 480px) {
+  .container {
+    width: auto
+  }
+}
+
+/* For smaller displays like laptops */
+@media (min-width: 768px) and (max-width: 979px) {
+  .container {
+    width: 724px
+  }
+}
+
+/* For larger displays */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px
+  }
+}
+
+#slides,
+#slides2,
+#slides3 {
+  display: none;
+  margin-bottom:50px;
+}
+
+.slidesjs-navigation {
+  margin-top:3px;
+}
+
+.slidesjs-previous {
+  margin-right: 5px;
+  float: left;
+}
+
+.slidesjs-next {
+  margin-right: 5px;
+  float: left;
+}
+
+.slidesjs-pagination {
+  margin: 6px 0 0;
+  float: right;
+  list-style: none;
+}
+
+.slidesjs-pagination li {
+  float: left;
+  margin: 0 1px;
+}
+
+.slidesjs-pagination li a {
+  display: block;
+  width: 13px;
+  height: 0;
+  padding-top: 13px;
+  background-image: url(img/pagination.png);
+  background-position: 0 0;
+  float: left;
+  overflow: hidden;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+  background-position: 0 -13px
+}
+
+.slidesjs-pagination li a:hover {
+  background-position: 0 -26px
+}
+
+ .navbar {
+  overflow: hidden
 }
 
 
