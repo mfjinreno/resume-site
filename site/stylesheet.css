@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'bebasNueBold'; /*a name to be used later*/
-    src: url('./fonts/BebasNeueBold.otf'); /*URL to font*/
+    src: url('./font/BebasNeueBold.otf'); /*URL to font*/
 }
 @font-face {
     font-family: 'bebasNueRegular'; /*a name to be used later*/
-    src: url('./fonts/BebasNeue Regular.otf'); /*URL to font*/
+    src: url('./font/BebasNeue Regular.otf'); /*URL to font*/
 }
 @font-face {
     font-family: 'Gafata'; /*a name to be used later*/
-    src: url('./fonts/gafata.otf'); /*URL to font*/
+    src: url('./font/gafata.otf'); /*URL to font*/
 }
 
 @media (min-width: 0px) and (max-width:999px){
@@ -420,7 +420,6 @@ td .padded {
   margin: 6px 0 0;
   float: right;
   list-style: none;
-  z-index: 1;
 }
 
 .slidesjs-pagination li {
@@ -479,12 +478,13 @@ td .padded {
 }
 
 section{
-		float: left;
+		margin:auto;
 		padding-top: 50px;
 		padding-bottom: 100px;
 		width: 100%;
 		padding-left:0;
 		padding-right:0;
+		overflow: hidden;
 }
 
 #icon-wrapper{
@@ -517,12 +517,11 @@ section{
 	margin-left:75%;
 }
 
-.icon-slide-container{
+.ic-slide-container{
 	height:300px;
 	overflow:hidden;
 	text-align: left;
 	position: absolute;
-	float: left;
 	width: 300px;
 	left: 50%;
 	margin-left: -150px;
