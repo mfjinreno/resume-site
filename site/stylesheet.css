@@ -1,21 +1,17 @@
 @font-face {
     font-family: 'bebasNueBold'; /*a name to be used later*/
-    src: url('./font/BebasNeueBold.otf'); /*URL to font*/
+    src: url('./fonts/BebasNeueBold.otf'); /*URL to font*/
 }
 @font-face {
     font-family: 'bebasNueRegular'; /*a name to be used later*/
-    src: url('./font/BebasNeue Regular.otf'); /*URL to font*/
+    src: url('./fonts/BebasNeue Regular.otf'); /*URL to font*/
 }
 @font-face {
     font-family: 'Gafata'; /*a name to be used later*/
-    src: url('./font/gafata.otf'); /*URL to font*/
+    src: url('./fonts/gafata.otf'); /*URL to font*/
 }
 
 @media (min-width: 0px) and (max-width:999px){
-	body{
-		margin: 0;
-		padding:0;
-	}
 	 table {
      	max-width: 60%;
      }
@@ -25,10 +21,9 @@
      }
 	.show-mobile {
         display: block;
-        max-width:100%;
+        max-width:80%;
         position:relative;
-        margin: auto;
-        padding:0;
+        margin:auto;
      }
       .hide-mobile {
         display: none;
@@ -42,7 +37,6 @@
 @media  (min-width:1000px){
 	.show-mobile {
         display: none;
-        padding:0;
      }
       .hide-mobile {
         display: block;
@@ -289,10 +283,6 @@ position: relative;
 	max-width:50%;
 }
 
-#mobile-list{
-	list-style: none;
-}
-
 .my-slider{
 	position:relative;
 	width:100% !important;
@@ -326,15 +316,6 @@ position: relative;
 	
 
 }
-a.navigate{
-	font-family: Gafata;
-}
-a.navigate:visited{
-	color:#ecf0f1;
-}
-a.navigate:hover{
-	color:#ecf0f1;
-}
 
 
 td .padded {
@@ -352,103 +333,6 @@ td .padded {
 .scale-image-slider{
 	width:100%;
 	height:auto;
-}
-
-#slides{
-	display:none;
-}
-
-
-.container {
-  margin: 0 auto
-}
-
-/* For tablets & smart phones */
-@media (max-width: 767px) {
-  body {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .container {
-    width: auto
-  }
-}
-
-/* For smartphones */
-@media (max-width: 480px) {
-  .container {
-    width: auto
-  }
-}
-
-/* For smaller displays like laptops */
-@media (min-width: 768px) and (max-width: 979px) {
-  .container {
-    width: 724px
-  }
-}
-
-/* For larger displays */
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px
-  }
-}
-
-#slides,
-#slides2,
-#slides3 {
-  display: none;
-  margin-bottom:50px;
-}
-
-.slidesjs-navigation {
-  margin-top:3px;
-}
-
-.slidesjs-previous {
-  margin-right: 5px;
-  float: left;
-}
-
-.slidesjs-next {
-  margin-right: 5px;
-  float: left;
-}
-
-.slidesjs-pagination {
-  margin: 6px 0 0;
-  float: right;
-  list-style: none;
-}
-
-.slidesjs-pagination li {
-  float: left;
-  margin: 0 1px;
-}
-
-.slidesjs-pagination li a {
-  display: block;
-  width: 13px;
-  height: 0;
-  padding-top: 13px;
-  background-image: url(img/pagination.png);
-  background-position: 0 0;
-  float: left;
-  overflow: hidden;
-}
-
-.slidesjs-pagination li a.active,
-.slidesjs-pagination li a:hover.active {
-  background-position: 0 -13px
-}
-
-.slidesjs-pagination li a:hover {
-  background-position: 0 -26px
-}
-
- .navbar {
-  overflow: hidden
 }
 
 
@@ -478,13 +362,12 @@ td .padded {
 }
 
 section{
-		margin:auto;
+		float: left;
 		padding-top: 50px;
 		padding-bottom: 100px;
 		width: 100%;
 		padding-left:0;
 		padding-right:0;
-		overflow: hidden;
 }
 
 #icon-wrapper{
@@ -517,11 +400,12 @@ section{
 	margin-left:75%;
 }
 
-.ic-slide-container{
+.icon-slide-container{
 	height:300px;
 	overflow:hidden;
 	text-align: left;
 	position: absolute;
+	float: left;
 	width: 300px;
 	left: 50%;
 	margin-left: -150px;
