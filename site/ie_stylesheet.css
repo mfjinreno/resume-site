@@ -1,0 +1,9 @@
+.image-wrapper{
+	max-width: 30% !important;
+	max-height: auto !important;
+}
+
+.ie-compat{
+	max-width: 30%!important;
+	padding:5% !important;
+}

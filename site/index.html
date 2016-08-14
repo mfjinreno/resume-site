@@ -3,7 +3,11 @@
 
   <head>
     <title>Michael Johnston</title>
-    <link type = "text/css" rel ="stylesheet" href="stylesheet.css" media = "screen"/>
+    <!--[if IE]>
+   <link type="text/css" rel="stylesheet" href="ie_stylesheet.css" />
+   <![endif]-->
+
+   <link type = "text/css" rel ="stylesheet" href="stylesheet.css" media = "screen"/>
     <link type = "text/css" rel="stylesheet" href="./script/unslider-master/dist/css/unslider.css">
     <link type = "text/css" rel="stylesheet" href="./script/unslider-master/dist/css/unslider-dots.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,8 +26,8 @@
       Show if screen size bigger than mobile
     -->
       <div class = "hide-mobile">
-        <table >
-          <th>
+        <table class = "table-fix">
+          <th class = "ie-compat">
             <div class="image-wrapper" id = "image-swap">
                 <a class = "hide" href = "#exp" onclick="test('exp'); return false;">
                   <img class = "scale-image" class = "header-links" src = "./images/experience.png"/>
@@ -31,7 +35,7 @@
                 </a>
             </div>
           </th>
-          <th>
+          <th class = "ie-compat">
             <div class="image-wrapper">
                 <a class = "hide" href = "#des" onclick="test('des'); return false;">
                   <img class = "scale-image" class = "header-links" src = "./images/des_text.png"/>
@@ -41,7 +45,7 @@
             </div>
 
           </th>
-          <th>
+          <th class = "ie-compat">
             <div class="image-wrapper">
                 <a class = "hide" href = "#eng" onclick="test('eng'); return false;">
 
@@ -59,7 +63,7 @@
     -->
       <div class = "show-mobile">
        <table >
-          <tr>s
+          <tr>
             <div class="image-wrapper">
                 <a class = "hide" href = "#exp" onclick="test('exp'); return false;">
                   <img class = "scale-image" class = "header-links" src = "./images/experience.png"/>
@@ -119,7 +123,7 @@
             </div>
           </td>
 
-          <td >
+          <td>
             <div class = "padded">
               <a class = "billion-link" href = "https://www.billioneffect.com"><h2>Billion</h2></a>
               <p class = "item">The product of a successful Hackathon, and $4000 in seed capital, Billion was created in March 2015 by a team of young-adults (myself included) looking to change the world. Billion is a competitive, bracket-style crowdfunder aimed at ideas solving social issues. Our first round raised over $8000 for a cleaning service that wants to rescue, hire, and re-habilitate sex-trafficking victims.</p>
@@ -139,7 +143,7 @@
       <table class = "item-section">
 
           <tr>
-            div class = "padded">
+            <div class = "padded">
               <a class = "billion-link" href = "https://www.humana.com"><h2>Humana</h2></a>
               <p class = "item">My time at Humana was spent on Data Aggregation and Analytics, developing SQL designed to run on databases with billions of rows. While focusing on efficiency and speed of my queries, I also became proficient in data visualization and user-focused development. For the front-end of my aggregation I used both Tableau and Qlik View, for both real-time and archive-based data mining.</p>
               <p class = "skills">Skills</p>

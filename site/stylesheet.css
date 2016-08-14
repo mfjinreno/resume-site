@@ -572,4 +572,17 @@ section{
 	}	
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     /* IE10+ CSS styles go here */
+  body{max-width: 100% !important;}
+  .table-fix{
+  	width: 50% !important;
+  	margin: 0 !important;
+  	max-height:auto !important;
+  }
 
+  .ie-compat{
+	max-width: 15%!important;
+	padding:5% !important;
+  }
+}
